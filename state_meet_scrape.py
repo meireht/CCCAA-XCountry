@@ -10,10 +10,10 @@ soup = BeautifulSoup(data)
 
 # Finding table and table data
 mens_table = soup.find_all('table')[3]
-mens_rows = table.find_all('tr')[1:]
+mens_rows = mens_table.find_all('tr')[1:]
 
 womens_table = soup.find_all('table')[5]
-womens_rows = table.find_all('tr')[1:]
+womens_rows = womens_table.find_all('tr')[1:]
 
 # Creating dictionaries
 variables = ['place', 'name', 'year', 'team', 'avg mile', 'time', 'score']
